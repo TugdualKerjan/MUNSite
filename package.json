@@ -1,0 +1,23 @@
+{
+  "name": "munsite",
+  "version": "1.0.0",
+  "description": "The site for EPFL MUN",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TugdualKerjan/MUNSite.git"
+  },
+  "keywords": [
+    "MUN",
+    "EPFL"
+  ],
+  "author": "Tugdual Kerjan, Mila Kjoseva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TugdualKerjan/MUNSite/issues"
+  },
+  "homepage": "https://github.com/TugdualKerjan/MUNSite#readme"
+}
