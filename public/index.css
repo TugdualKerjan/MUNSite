@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background: red;
+}
+
+.nav-bar {
+  display: flex;
+  position: relative;
+
+  font-family: "Roboto", sans-serif;
+  
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+  /* grid-template-columns: 300px 1fr 200px; */
+}
+
+.logo {
+  z-index: 10;
+  color: black !important;
+  font-weight: 800;
+  
+  font-size: 3em;
+}
+
+.menu {
+  font-size: 1em;
+}
+
+.stage-1 {
+  display: flex;
+  flex-direction: column;
+
+  background-color: crimson;
+  border-radius: 15px;
+
+  margin-right: 40%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  padding: 5%;
+}
+
+.super {
+  /* padding: 3%; */
+  font-family: "DM Mono", monospace;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.desc {
+  /* padding: 3%; */
+  padding-left: 8%;
+  padding-right: 20%;
+
+
+  font-family: "DM Mono", monospace;
+  font-weight: 800;
+  font-size: 1em;
+}
