@@ -161,3 +161,52 @@ body {
 #iconback[data-scroll="in"] {
   transform: scaleX(1);
 }
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.card {
+  font-family: "Roboto", sans-serif;
+  /* Acts as a flexible column */
+  display: flex;
+  flex-direction: column;
+  /* Relative position? */
+  position: relative;
+  height: 485px;
+  width: 300px;
+  min-width: 250px;
+  /* Give some space in the card */
+  padding: 1.5rem;
+
+  /* Shadows */
+  /* Round the edges */
+  border-radius: 16px;
+  border: 2px solid red;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.6);
+
+  transition: 0.2s;
+  /* transition-duration: 0.1s; */
+}
+
+.card h2 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.card img {
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
