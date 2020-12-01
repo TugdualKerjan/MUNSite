@@ -72,10 +72,12 @@
 
 body {
   margin: 0;
+  /* overflow-y: hidden; Hide vertical scrollbar */
+  overflow-x: hidden;
 }
 
 .stage {
-  padding:  3% 6% 3% 6%;
+  padding: 3% 6% 3% 6%;
   align-items: center;
 }
 
@@ -165,8 +167,7 @@ body {
 .card-list {
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
-  overflow-x: scroll;
+  padding: 3% 6% 3% 6%;
 }
 
 .card {
@@ -174,6 +175,8 @@ body {
   /* Acts as a flexible column */
   display: flex;
   flex-direction: column;
+  flex: 35% auto;
+  /* justify-content: space-between; */
   /* Relative position? */
   position: relative;
   height: 485px;
@@ -181,15 +184,18 @@ body {
   min-width: 250px;
   /* Give some space in the card */
   padding: 1.5rem;
+}
 
-  /* Shadows */
-  /* Round the edges */
-  border-radius: 16px;
-  border: 2px solid red;
-  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.6);
-
-  transition: 0.2s;
-  /* transition-duration: 0.1s; */
+#aaa {
+  overflow: hidden;
+  align-self: center;
+  translate: 0 80%;
+  position: absolute;
+  font-family: fantasy;
+  font-size: 300px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
 }
 
 .card h2 {
@@ -202,11 +208,54 @@ body {
   font-weight: 800;
 }
 
-.card img {
-  font-size: 1em;
-  font-weight: 800;
+.card .card-image {
+  height: 40%;
+  overflow: hidden;
 }
 
-.card:hover {
+.card .card-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.clickable:hover {
   transform: scale(1.1);
+}
+
+.clickable {
+  /* Shadows */
+  /* Round the edges */
+  border-radius: 16px;
+  background-color: white;
+  border: 2px solid red;
+  box-shadow: 0 0.3em 1em rgba(255, 0, 0, 0.3);
+
+  transition: 0.2s;
+  /* transition-duration: 0.1s; */
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  /* Acts as a flexible column */
+  display: flex;
+  flex-direction: column;
+  flex: 35% auto;
+  /* justify-content: space-between; */
+  /* Relative position? */
+  position: relative;
+  /* height: 90px; */
+  /* width: 500px; */
+  /* Give some space in the card */
+  padding: 1.5rem;
+}
+
+.button a {
+  /* margin-left: 5%;
+  margin-right: 5%; */
+
+  font-size: 3em;
+  font-weight: 800;
+  align-self: center;
+  justify-self: center;
+  color: black;
 }
