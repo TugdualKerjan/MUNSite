@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@250&display=swap');
 
 /* Realign hero cuz ugly */
 @media (max-width: 850px) {
@@ -18,11 +20,29 @@
 
 @media (min-width: 46em) {
   .card-columns {
-    -webkit-column-count: 4!important;
-    -moz-column-count: 4!important;
-    column-count: 4 !important;
+    -webkit-column-count: 2!important;
+    -moz-column-count: 2!important;
+    column-count: 2!important;
   }
 }
+
+@media (min-width: 58em) {
+  .card-columns {
+    -webkit-column-count: 2!important;
+    -moz-column-count: 2!important;
+    column-count: 2!important;
+  }
+}
+
+@media (min-width: 70em) {
+  .card-columns {
+    -webkit-column-count: 4!important;
+    -moz-column-count: 4!important;
+    column-count: 4!important;
+  }
+}
+
+
 /* var --color: red; */
 
 /* ======================================== */
@@ -98,13 +118,13 @@ body {
 }
 
 .super {
-  font-family: "Rubik", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: calc(8px + 2.7vw);
 }
 
 .desc {
-  font-family: "Roboto", sans-serif;
+  font-family: "Mada", sans-serif;
   padding-top: 1vw;
   font-size: calc(6px + 1.5vw);
 }
@@ -196,11 +216,11 @@ body {
 /* ======================================== */
 
 .card-title {
-  font-family: "Rubik", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .card-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Mada", sans-serif;
 }
 
 .card-columns .card {
@@ -235,7 +255,7 @@ body {
 /* ======================================== */
 
 .button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Mada", sans-serif;
   /* Acts as a flexible column */
   display: flex;
   flex-direction: column;
