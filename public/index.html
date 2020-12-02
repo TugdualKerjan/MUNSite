@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUN EPFL</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- <script type="text/javascript" src="http://livejs.com/live.js"></script> -->
 </head>
 
@@ -56,14 +58,14 @@
         </div>
         <img id="hero" src="images/hero.jpg">
     </div>
-    <div id="iconback"></div>
+    <div id="break"></div>
     <div class="stage" id="stage2">
         <div id="ministage1">
-            <div id="icon3">
+            <div id="icon">
                 <img id="iconimg" src="images/path170.png">
-                <div id="iconback"></div>
+                <div id="break"></div>
             </div>
-            <div class="textdiv">
+            <div class="linedesc">
                 <div class="super">
                     Public Speaking
                 </div>
@@ -75,11 +77,11 @@
             </div>
         </div>
         <div id="ministage2">
-            <div id="icon3">
+            <div id="icon">
                 <img id="iconimg" src="images/path170.png">
-                <div id="iconback"></div>
+                <div id="break"></div>
             </div>
-            <div class="textdiv">
+            <div class="linedesc">
                 <div class="super">
                     Geopolitics
                 </div>
@@ -91,11 +93,11 @@
             </div>
         </div>
         <div id="ministage3">
-            <div id="icon3">
+            <div id="icon">
                 <img id="iconimg" src="images/path170.png">
-                <div id="iconback"></div>
+                <div id="break"></div>
             </div>
-            <div class="textdiv">
+            <div class="linedesc">
                 <div class="super">
                     Negotiation
                 </div>
@@ -106,9 +108,9 @@
             </div>
         </div>
     </div>
-    <div id="iconback"></div>
+    <div id="break"></div>
     <div class="stage" id="stage3">
-        <div class="textdiv">
+        <div class="">
             <div class="super">
                 Conferences
             </div>
@@ -117,50 +119,91 @@
             </div>
         </div>
     </div>
-    <section class="card-list">
-        <article class="card clickable">
-            <div class="card-image"><img src="images/c3.jpg"></div>
-            <header class="card-header">
-                <p>Public Speaking Contest</p>
-                <p>October 6th 2020</p>
-                <h2>MUN EPFL Organised its Annual Concours d'Eloquence this year, taking place in the STCC with the help
+    <!-- <div class="card-deck">
+        <div class="card clickable">
+            <img class="card-img-top" src="images/c1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card clickable">
+            <img class="card-img-top" src="images/c2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card clickable">
+            <img class="card-img-top" src="images/c3.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card clickable">
+            <img class="card-img-top" src="images/c3.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div> -->
+    <div class="stage card-columns">
+        <div class="card clickable">
+            <img class="card-img-top" src="images/c3.jpg">
+            <div class="card-body">
+                <h5 class="card-title">Public Speaking Contest</h5>
+                <p class="card-text"><small class="text-muted">October 6th 2020</small></p>
+                <p class="card-text">MUN EPFL Organised its Annual Concours d'Eloquence this year, taking place in the
+                    STCC with the help
                     of FORUM EPFL. 6 Finalists debated and fought to gain the prestegious title of Best Public Speaker
-                    2020</h2>
-            </header>
-        </article>
-        <article class="card clickable">
-            <div class="card-image"><img src="images/c4.JPG"></div>
-            <header class="card-header">
-                <p>Game of Thrones Crisis</p>
-                <p>March 11th 2020</p>
-                <h2>Organized by the board, this Crisis threw the members in the shoes of the Westeros characters to try
+                    2020</p>
+            </div>
+        </div>
+        <div class="card clickable">
+            <img class="card-img-top" src="images/c4.JPG">
+            <div class="card-body">
+                <h5 class="card-title">Game of Thrones Crisis</h5>
+                <p class="card-text"><small class="text-muted">March 11th 2020</small></p>
+                <p class="card-text">Organized by the board, this Crisis threw the members in the shoes of the Westeros
+                    characters to try
                     and change the past,
                     all in the framework of a Historical Crisis!
-                </h2>
-            </header>
-        </article>
-        <article class="card clickable">
-            <div class="card-image"><img src="images/c2.jpg"></div>
-            <header class="card-header">
-                <p>Sierra Leone Crisis</p>
-                <p>March 23th 2019</p>
-                <h2>Organized by EPFL, this crisis weekend that occurred on the 2nd & 3rd March 2019 reenacted the blood
-                    diamond conflict of Sierra Leone</h2>
-            </header>
-        </article>
-        <article class="card clickable">
-            <div class="card-image"><img src="images/c1.jpg"></div>
-            <header class="card-header">
-                <p>WorldMUN Madrid</p>
-                <p>May 25th 2018</p>
-                <h2>MUN EPFL participates every year in WorldMUN, the most recognized MUN event in the world. At
-                    WorldMUN 2019 in Madrid, we formed a joined delegation with ETH Zürich. </h2>
-            </header>
-        </article>
-    </section>
-    <div id="iconback"></div>
+                </p>
+            </div>
+        </div>
+        <div class="card clickable">
+            <img class="card-img-top" src="images/c2.jpg">
+            <div class="card-body">
+                <h5 class="card-title"> Sierra Leone Crisis</h5>
+                <p class="card-text"><small class="text-muted">March 23th 2019</small></p>
+                <p class="card-text">Organized by EPFL, this crisis weekend that occurred on the 2nd & 3rd March 2019
+                    reenacted the blood
+                    diamond conflict of Sierra Leone</p>
+            </div>
+        </div>
+        <div class="card clickable">
+            <img class="card-img-top" src="images/c1.jpg">
+            <div class="card-body">
+                <h5 class="card-title">WorldMUN Madrid</h5>
+                <p class="card-text"><small class="text-muted">May 25th 2018</small></p>
+                <p class="card-text">MUN EPFL participates every year in WorldMUN, the most recognized MUN event in the
+                    world. At
+                    WorldMUN 2019 in Madrid, we formed a joined delegation with ETH Zürich. </p>
+            </div>
+        </div>
+    </div>
+    <div id="break"></div>
     <div class="stage" id="stage3">
-        <div class="textdiv">
+        <div class="linedesc">
             <div class="super">
                 Sessions
             </div>
@@ -170,49 +213,47 @@
             </div>
         </div>
     </div>
-    <section class="card-list">
-        <article class="card clickable">
-            <div class="card-image"><img src="images/s2.jpeg"></div>
-            <header class="card-header">
-                <p>Private Military Contractors</p>
-                <p>4th November 2020 - 25th November 2020</p>
-                <h2>Deep thought was put into the amendment to the Geneva Conventions that failed to encapsulate the
-                    possibility that
-                    certain citizens could be proactive in military conflicts, blurring the line between combattant and
-                    citizen.
-                </h2>
-            </header>
-        </article>
-        <article class="card clickable">
-            <div class="card-image"><img src="images/c3.jpg"></div>
-            <header class="card-header">
-                <p>Sierra Leone Crisis</p>
-                <p>March 23th 2019</p>
-                <h2>Organized by EPFL, this crisis weekend that occurred on the 2nd & 3rd March 2019 reenacted the blood
-                    diamond conflict of Sierra Leone</h2>
-            </header>
-        </article>
-        <article class="card clickable">
-            <div class="card-image"><img src="images/s1.jpg"></div>
-            <header class="card-header">
-                <p>The Hong Kong situation in China</p>
-                <p>September 16th 2020 - October 7th 2020</p>
-                <h2>Intense discussion regarding the current situation in Hong Kong as China tightens its grip on the
-                    territory.</h2>
-            </header>
-        </article>
-        <article class="card clickable">
-            <div class="card-image"><img src="images/s3.jpeg"></div>
-            <header class="card-header">
-                <p>UNEP Environmental Committee</p>
-                <p>May 25th 2018</p>
-                <h2>Different nations came together to debate on the subject of how to tax C02 Emmissions </h2>
-            </header>
-        </article>
-    </section>
-    <div id="iconback"></div>
+    <div class="stage card-columns">
+        <div class="card clickable">
+            <img class="card-img-top" src="images/s2.png">
+            <div class="card-body">
+                <h5 class="card-title">Private Military Contractors</h5>
+                <p class="card-text"><small class="text-muted">4th November 2020 - 25th November 2020</small></p>
+                <p class="card-text">Deep thought was put into the amendment to the Geneva Conventions that failed to encapsulate the
+                    possibility that PMCs blur the line between combattant and citizen.
+                </p>
+            </div>
+        </div>
+        <div class="card clickable">
+            <img class="card-img-top" src="images/c3.jpg">
+            <div class="card-body">
+                <h5 class="card-title">Sierra Leone Crisis</h5>
+                <p class="card-text"><small class="text-muted">March 23th 2019</small></p>
+                <p class="card-text">Organized by EPFL, this crisis weekend that occurred on the 2nd & 3rd March 2019 reenacted the blood
+                    diamond conflict of Sierra Leone</p>
+            </div>
+        </div>
+        <div class="card clickable">
+            <img class="card-img-top" src="images/s1.jpg">
+            <div class="card-body">
+                <h5 class="card-title">The Hong Kong situation in China</h5>
+                <p class="card-text"><small class="text-muted">September 16th 2020 - October 7th 2020</small></p>
+                <p class="card-text">Intense discussion regarding the current situation in Hong Kong as China tightens its grip on the
+                    territory.</p>
+            </div>
+        </div>
+        <div class="card clickable">
+            <img class="card-img-top" src="images/s3.jpeg">
+            <div class="card-body">
+                <h5 class="card-title">UNEP Environmental Committee</h5>
+                <p class="card-text"><small class="text-muted">May 25th 2018</small></p>
+                <p class="card-text">Different nations came together to debate on the subject of how to tax C02 Emmissions </p>
+            </div>
+        </div>
+    </div>
+    <div id="break"></div>
     <div class="stage" id="stage3">
-        <div class="textdiv">
+        <div class="linedesc">
             <div class="super">
                 Documents
             </div>
@@ -221,15 +262,17 @@
             </div>
         </div>
     </div>
-    <section class="card-list">
+    <section class="list">
         <article class="button clickable">
-            <a href="#">Association Statutes</a>
+            <a href="https://docs.google.com/document/d/1c_dt2O3AnltpOdkB4UyKkLcJaSBeQlVmKe6TLoHj2W8/edit?usp=sharing">Association
+                Statutes</a>
         </article>
         <article class="button clickable">
-            <a href="#">Minutes</a>
+            <a href="https://drive.google.com/drive/folders/1qjX17p_3wPTMAtOfKVvp1Fmrk9vyG-RF?usp=sharing">Minutes</a>
         </article>
         <article class="button clickable">
-            <a href="#">Rules of Procedure</a>
+            <a href="https://docs.google.com/document/d/1YCABdzLK_mSUF1OsDC45ver1wE9vNA9ILxbQoZ33WMk/edit?usp=sharing">Rules
+                of Procedure</a>
         </article>
     </section>
 </body>
