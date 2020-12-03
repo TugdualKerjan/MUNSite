@@ -232,7 +232,6 @@ body {
 }
 
 .card-columns .card {
-  margin: 5%;
   min-height: 500px;
 }
 
@@ -276,7 +275,7 @@ body {
 
 /* Text for the buttons */
 .button a {
-  font-size: 20px;/*calc(6px + 2vw);*/
+  font-size: calc(15px + 0.5vw);
   font-weight: 700;
   align-self: center;
   justify-self: center;
