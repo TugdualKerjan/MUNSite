@@ -214,6 +214,9 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0% 3% 0% 3%;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* ======================================== */
@@ -230,6 +233,7 @@ body {
 
 .card-columns .card {
   margin: 5%;
+  min-height: 500px;
 }
 
 /* ======================================== */
@@ -272,11 +276,17 @@ body {
 
 /* Text for the buttons */
 .button a {
-  font-size: calc(6px + 2vw);
-  font-weight: 800;
+  font-size: 20px;/*calc(6px + 2vw);*/
+  font-weight: 700;
   align-self: center;
   justify-self: center;
   color: black;
+}
+
+.divider{
+  width:30px;
+  height:auto;
+  display:inline-block;
 }
 
 /* ======================================== */
