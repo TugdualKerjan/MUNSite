@@ -61,7 +61,7 @@ body {
 #logoback {
   position: fixed;
   background-color: white;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
   animation: 1s forwards ease-out 1s 1 hello3;
 }
@@ -82,7 +82,7 @@ body {
 
 #hero {
   flex: 2;
-  height: calc(200px + 24vw);
+  height: calc(200px + 24vh);
   max-width: 100%;
 
   object-fit: cover;
@@ -209,6 +209,10 @@ body {
   display: flex;
 }
 
+#stage3 .desc {
+  max-width: 60%;
+}
+
 /* List for the cards and the buttons */
 .list {
   display: flex;
@@ -233,6 +237,10 @@ body {
 
 .card-columns .card {
   min-height: 500px;
+}
+
+.card-columns {
+  background: linear-gradient(356deg, rgba(255,102,102,1) 0%, rgba(255,255,255,1) 68%); 
 }
 
 /* ======================================== */
