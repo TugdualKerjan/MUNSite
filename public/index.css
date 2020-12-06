@@ -92,8 +92,6 @@ body {
   animation: 2s forwards 0s 1 introFromRight;
 }
 
-
-
 /* ======================================== */
 /* Block has padding */
 /* ======================================== */
@@ -285,10 +283,10 @@ body {
   color: black;
 }
 
-.divider{
-  width:30px;
-  height:auto;
-  display:inline-block;
+.divider {
+  width: 30px;
+  height: auto;
+  display: inline-block;
 }
 
 /* ======================================== */
@@ -356,24 +354,10 @@ body {
 /* Contact */
 /* ======= */
 
-.epfl-image {
-  background-image: url("https://www.epfl.ch/about/campus/wp-content/uploads/2018/11/RLC-above-e1550497802378-768x432.jpg");
-  background-color: #cccccc; 
-  height: 500px; 
-  background-position: center; 
-  background-size: cover; 
+#stage4 {
+  font-weight: bold;
 }
 
-.super2 {
-  font-family: "Raleway", sans-serif;
-  color: #cccccc;
-  font-weight: 800;
-  font-size: calc(8px + 2.7vw);
-}
-
-.desc2 {
-  font-family: "Mada", sans-serif;
-  color: #cccccc;
-  padding-top: 1vw;
-  font-size: calc(6px + 1.5vw);
+#stage4 .super {
+  padding-bottom: 2.5%;
 }
