@@ -248,7 +248,7 @@ body {
 /* ======================================== */
 
 /* Any clickable has small red diffuse and grows when hovering */
-.clickable {
+.clickable::not(.card) {
   /* Shadows */
   /* Round the edges */
   padding: 1%;
