@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mada:wght@250&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Noto+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Noto+Serif+JP:wght@700&family=Noto+Serif:ital@1&display=swap');
 
 /* Realign hero cuz ugly */
 @media (max-width: 850px) {
@@ -81,11 +84,12 @@ body {
 }
 
 #hero {
-  flex: 2;
-  height: calc(200px + 24vh);
-  max-width: 100%;
-
+  flex: 1.7;
   object-fit: cover;
+  height: calc(300px + 6vh);
+  /* height: 100%; */
+  max-width: 90%;
+
   border-radius: 10px;
   overflow: hidden;
 
@@ -118,13 +122,14 @@ body {
 
 #herotext {
   padding: 3%;
+
   flex: 1;
   animation: 2s forwards 0s 1 introFromLeft;
 }
 
 .super {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
   font-size: calc(8px + 2.7vw);
 }
 
