@@ -236,19 +236,30 @@ body {
 }
 
 .card-columns .card {
+  transition: 0.2s;
   min-height: 500px;
+  padding: 1px;
+  overflow: visible;
+}
+
+
+.card-columns .card:hover {
+  transform: scale(1.03);
 }
 
 .card-columns {
-  background: linear-gradient(356deg, rgba(255,102,102,1) 0%, rgba(255,255,255,1) 68%); 
+  background: linear-gradient(356deg, rgb(255, 0, 0) 0%, rgba(255,255,255,1) 68%); 
+  overflow: visible;
 }
+
+
 
 /* ======================================== */
 /* Clickable */
 /* ======================================== */
 
 /* Any clickable has small red diffuse and grows when hovering */
-.clickable::not(.card) {
+.clickable {
   /* Shadows */
   /* Round the edges */
   padding: 1%;
@@ -263,6 +274,7 @@ body {
 
 .clickable:hover {
   transform: scale(1.03);
+  box-shadow: 0 0.1em 0.3em green;
 }
 
 /* ======================================== */
