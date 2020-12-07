@@ -300,6 +300,7 @@ body {
   /* Give some space in the card */
   padding: 1.5em;
   margin-bottom: 2em;
+  border: none;
 }
 
 /* Text for the buttons */
