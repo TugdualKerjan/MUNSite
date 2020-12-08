@@ -69,7 +69,8 @@
         <button class="menuButton " onClick="
                 const yOffset = -10; 
                 const element = document.getElementById('stage2');
-                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                const yOffset = (window.outerWidth < 1011 ? 0.225 : 0.15);
+                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset * window.innerHeight;
                 window.scrollTo({ top: y, behavior: 'smooth' });">
             About
         </button>
@@ -77,7 +78,8 @@
         <button class="menuButton " onClick="
                 const yOffset = -10; 
                 const element = document.getElementById('stage3');
-                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                const yOffset = (window.outerWidth < 1011 ? 0.225 : 0.15);
+                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset * window.innerHeight;
                 window.scrollTo({ top: y, behavior: 'smooth' });">
             Conferences
         </button>
@@ -85,7 +87,8 @@
         <button class="menuButton " onClick="
                 const yOffset = -10; 
                 const element = document.getElementById('stage4');
-                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                const yOffset = (window.outerWidth < 1011 ? 0.225 : 0.15);
+                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset * window.innerHeight;
                 window.scrollTo({ top: y, behavior: 'smooth' });">
             Sessions
         </button>
@@ -93,7 +96,8 @@
         <button class="menuButton " onClick="
                 const yOffset = -10; 
                 const element = document.getElementById('stage5');
-                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                const yOffset = (window.outerWidth < 1011 ? 0.225 : 0.15);
+                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset * window.innerHeight;
                 window.scrollTo({ top: y, behavior: 'smooth' });">
             Documents
         </button>
@@ -101,7 +105,8 @@
         <button class="menuButton " onClick="
                 const yOffset = -10; 
                 const element = document.getElementById('stage6');
-                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                const yOffset = (window.innerWidth < 1011 ? 0.225 : 0.15);
+                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset * window.innerHeight;
                 window.scrollTo({ top: y, behavior: 'smooth' });">
             Contact
         </button>

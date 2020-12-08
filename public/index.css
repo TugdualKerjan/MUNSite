@@ -13,7 +13,7 @@
 @media (max-width: 1010px) {
   #stage1 {
     /* Avoid the logo and menu*/
-    padding-top: 21vh;
+    padding-top: 22.5vh;
     flex-direction: column-reverse;
   }
 
