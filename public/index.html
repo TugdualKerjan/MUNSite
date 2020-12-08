@@ -64,6 +64,35 @@
         </svg>
     </div>
     <div id="container">
+        <div class="menu" id="stage0">
+            <div class="menuList">
+                <button class="menuButton clickable"
+                onClick="document.getElementById('stage2').scrollIntoView();">
+                    About
+                </button>
+                <div class="divider"></div>
+                <button class="menuButton clickable"
+                    onClick="document.getElementById('stage3').scrollIntoView();">
+                Conferences
+                </button>
+                <div class="divider"></div>
+                <button class="menuButton clickable"
+                    onClick="document.getElementById('stage4').scrollIntoView();">
+                    Sessions
+                </button>
+                <div class="divider"></div>
+                <button class="menuButton clickable"
+                    onClick="document.getElementById('stage5').scrollIntoView();">
+                    Documents
+                </button>
+                <div class="divider"></div>
+                <button class="menuButton clickable"
+                    onClick="document.getElementById('stage6').scrollIntoView();">
+                    Contact
+                </button>
+            </div>
+        </div>
+        <div id="break"></div>
         <div class="stage" id="stage1">
             <div id="herotext">
                 <div class="super">
@@ -195,7 +224,7 @@
             </div>
         </div>
         <div id="break"></div>
-        <div class="stage" id="stage3">
+        <div class="stage" id="stage4">
             <div class="linedesc">
                 <div class="super">
                     Sessions
@@ -256,7 +285,7 @@
             </div>
         </div>
         <div id="break"></div>
-        <div class="stage" id="stage3">
+        <div class="stage" id="stage5">
             <div class="linedesc">
                 <div class="super">
                     Documents
@@ -267,36 +296,31 @@
             </div>
         </div>
         <section class="list">
-            <!-- <article class="button clickable"> -->
-            <a class="button clickable"
-                href="https://docs.google.com/document/d/1c_dt2O3AnltpOdkB4UyKkLcJaSBeQlVmKe6TLoHj2W8/edit?usp=sharing">Association
-                Statutes</a>
-            <!-- </article> -->
+            <button class="button clickable"
+                onclick="location.href='https://docs.google.com/document/d/1c_dt2O3AnltpOdkB4UyKkLcJaSBeQlVmKe6TLoHj2W8/edit?usp=sharing'">
+                Association Statutes</button>
             <div class="divider"></div>
-            <!-- <article class="button clickable"> -->
-            <a class="button clickable"
-                href="https://drive.google.com/drive/folders/1qjX17p_3wPTMAtOfKVvp1Fmrk9vyG-RF?usp=sharing">Minutes</a>
-            <!-- </article> -->
+            <button class="button clickable"
+                onclick="location.href='https://drive.google.com/drive/folders/1qjX17p_3wPTMAtOfKVvp1Fmrk9vyG-RF?usp=sharing'">
+                Minutes</button>
             <div class="divider"></div>
-            <!-- <article class="button clickable"> -->
-            <a class="button clickable"
-                href="https://docs.google.com/document/d/1YCABdzLK_mSUF1OsDC45ver1wE9vNA9ILxbQoZ33WMk/edit?usp=sharing">Rules
-                of Procedure</a>
-            <!-- </article> -->
+            <button class="button clickable"
+                onclick="location.href='https://docs.google.com/document/d/1YCABdzLK_mSUF1OsDC45ver1wE9vNA9ILxbQoZ33WMk/edit?usp=sharing'">
+                Rules of Procedure</button>
         </section>
         <div id="break"></div>
-        <div class="stage" id="stage4">
+        <div class="stage" id="stage6">
             <div class="super">
                 Contact MUN EPFL
             </div>
             <div class="list">
                 <!-- <div class="button clickable"> -->
-                <a class="button clickable" href="mailto: mun@epfl.ch">mun@epfl.ch</a>
+                <button class="button clickable" onclick="location.href='mailto: mun@epfl.ch'">mun@epfl.ch</button>
                 <!-- </div> -->
                 <div class="divider"></div>
 
                 <!-- <div class="button clickable"> -->
-                <a class="button clickable" href="https://plan.epfl.ch/?q=CO116">CO 116, EPFL, CH-1015 Lausanne</a>
+                <button class="button clickable" onclick="location.href='https://plan.epfl.ch/?q=CO116'">CO 116, EPFL, CH-1015 Lausanne</button>
                 <!-- </div> -->
             </div>
         </div>

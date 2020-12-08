@@ -108,12 +108,55 @@ body {
 }
 
 /* ======================================== */
+/* Menu */
+/* ======================================== */
+
+.menu {
+  /* Avoid the logo */
+  /* padding: 2.5% 6% 2.5% 6%; */
+  padding-top: 15vh;
+  /* display: flex; */
+  align-items: flex-end;
+}
+
+.menuList {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 3% 0% 3%;
+  margin: auto;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menuButton {
+  font-family: "Mada", sans-serif;
+  /* Acts as a flexible column */
+  display: flex;
+  flex-direction: column;
+  flex: 35% auto;
+  /* Relative position? */
+  position: relative;
+  /* Give some space in the card */
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+}
+
+/* Text for the buttons */
+.menuButton {
+  font-size: calc(15px + 0.5vw);
+  font-weight: 700;
+  align-self: center;
+  justify-self: center;
+  color: black;
+}
+
+/* ======================================== */
 /* First block with hero */
 /* ======================================== */
 
 #stage1 {
   /* Avoid the logo */
-  padding-top: 15vh;
   display: flex;
 }
 
@@ -300,6 +343,7 @@ body {
   /* Give some space in the card */
   padding: 1.5em;
   margin-bottom: 2em;
+  border: none;
 }
 
 /* Text for the buttons */
