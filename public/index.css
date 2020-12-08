@@ -73,12 +73,13 @@ body {
 }
 
 #logo {
-  margin-left: auto;
-  margin-right: auto;
+  align-self: start;
+  /* margin-left: auto;
+  margin-right: auto; */
   display: block;
   height: 100vh;
   max-width: 100%;
-  animation: 1s forwards ease-out 1s 1 hello;
+  animation: 2s forwards ease-out 1s 1 hello;
 }
 
 .laurier {
@@ -120,34 +121,31 @@ body {
 }
 
 .menuList {
+  top: 3.5vh;
+  right: 3%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  padding: 0% 3% 0% 3%;
-  margin: auto;
   flex-direction: row;
+
+  align-items: center;
   justify-content: flex-end;
+
+  opacity: 0;
+  animation: 1s forwards ease-in 1s 1 hello2;
+  z-index: 2;
 }
 
 .menuButton {
-  font-family: "Mada", sans-serif;
-  /* Acts as a flexible column */
-  display: flex;
-  flex-direction: column;
-  flex: 35% auto;
-  /* Relative position? */
   position: relative;
+  /* Acts as a flexible column */
+  font-family: "Mada", sans-serif;
   /* Give some space in the card */
-  padding: 0.5em;
-  margin-bottom: 1em;
+  padding: 1em;
   border: none;
-}
-
-/* Text for the buttons */
-.menuButton {
-  font-size: calc(15px + 0.5vw);
+  font-size: calc(5px + 0.5vw);
   font-weight: 700;
-  align-self: center;
-  justify-self: center;
+  background: none;
   color: black;
 }
 
@@ -380,8 +378,15 @@ body {
   0% {
     height: 100vh;
   }
+  50% {
+    height: 15vh;
+    /* margin-left: 0%;
+    margin-right: auto; */
+  }
   100% {
     height: 15vh;
+
+    margin-left: 6%;
   }
 }
 

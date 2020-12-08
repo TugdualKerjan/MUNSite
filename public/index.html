@@ -17,6 +17,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
 
 
     <!-- Favicon -->
@@ -63,34 +65,49 @@
             </g>
         </svg>
     </div>
+    <div class="menuList">
+        <button class="menuButton " onClick="
+                const yOffset = -10; 
+                const element = document.getElementById('stage2');
+                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                window.scrollTo({ top: y, behavior: 'smooth' });">
+            About
+        </button>
+        <div class="divider"></div>
+        <button class="menuButton " onClick="
+                const yOffset = -10; 
+                const element = document.getElementById('stage3');
+                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                window.scrollTo({ top: y, behavior: 'smooth' });">
+            Conferences
+        </button>
+        <div class="divider"></div>
+        <button class="menuButton " onClick="
+                const yOffset = -10; 
+                const element = document.getElementById('stage4');
+                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                window.scrollTo({ top: y, behavior: 'smooth' });">
+            Sessions
+        </button>
+        <div class="divider"></div>
+        <button class="menuButton " onClick="
+                const yOffset = -10; 
+                const element = document.getElementById('stage5');
+                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                window.scrollTo({ top: y, behavior: 'smooth' });">
+            Documents
+        </button>
+        <div class="divider"></div>
+        <button class="menuButton " onClick="
+                const yOffset = -10; 
+                const element = document.getElementById('stage6');
+                const y = element.getBoundingClientRect().top + window.pageYOffset - 0.15 * window.innerHeight;
+                window.scrollTo({ top: y, behavior: 'smooth' });">
+            Contact
+        </button>
+    </div>
     <div id="container">
         <div class="menu" id="stage0">
-            <div class="menuList">
-                <button class="menuButton clickable"
-                onClick="document.getElementById('stage2').scrollIntoView();">
-                    About
-                </button>
-                <div class="divider"></div>
-                <button class="menuButton clickable"
-                    onClick="document.getElementById('stage3').scrollIntoView();">
-                Conferences
-                </button>
-                <div class="divider"></div>
-                <button class="menuButton clickable"
-                    onClick="document.getElementById('stage4').scrollIntoView();">
-                    Sessions
-                </button>
-                <div class="divider"></div>
-                <button class="menuButton clickable"
-                    onClick="document.getElementById('stage5').scrollIntoView();">
-                    Documents
-                </button>
-                <div class="divider"></div>
-                <button class="menuButton clickable"
-                    onClick="document.getElementById('stage6').scrollIntoView();">
-                    Contact
-                </button>
-            </div>
         </div>
         <div id="break"></div>
         <div class="stage" id="stage1">
@@ -320,7 +337,8 @@
                 <div class="divider"></div>
 
                 <!-- <div class="button clickable"> -->
-                <button class="button clickable" onclick="location.href='https://plan.epfl.ch/?q=CO116'">CO 116, EPFL, CH-1015 Lausanne</button>
+                <button class="button clickable" onclick="location.href='https://plan.epfl.ch/?q=CO116'">CO 116, EPFL,
+                    CH-1015 Lausanne</button>
                 <!-- </div> -->
             </div>
         </div>
@@ -330,6 +348,5 @@
     </div>
 </body>
 <script src="../scroll-out.min.js"></script>
-<script src="index.js"></script>
 
 </html>
