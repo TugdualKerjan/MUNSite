@@ -1,18 +1,131 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mada:wght@250&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Noto+Serif:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Noto+Serif+JP:wght@700&family=Noto+Serif:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Noto+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Noto+Serif+JP:wght@700&family=Noto+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
 /* Realign hero cuz ugly */
-@media (max-width: 850px) {
+@media (max-width: 1010px) {
   #stage1 {
+    /* Avoid the logo and menu*/
+    padding-top: 21vh;
     flex-direction: column-reverse;
+  }
+
+  .menuList {
+    transform: translateX(0);
+    padding-top: 16.5vh;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    padding-bottom: 3vh;
+    height: 3vh;
+    justify-content: space-evenly;
+    background: white;
+
+    animation: 2s forwards ease-in 1s 1 hello2;
+
+    z-index: 1;
+  }
+
+  .menuButton {
+    font-size: calc(15px);
+    font-weight: 500;
+  }
+
+  #logo {
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    animation: 2s forwards ease-in 1s 1 helloa;
+  }
+
+  @keyframes helloa {
+    0% {
+      height: 100vh;
+    }
+    100% {
+      height: 15vh;
+    }
+  }
+}
+
+@media (min-width: 1011px) {
+  #stage1 {
+    /* Avoid the logo */
+    padding-top: 15vh;
+  }
+
+  .menuList {
+    transform: translateX(100vw);
+    animation: 2s forwards ease-in 1s 1 introFromRight;
+    right: 3%;
+    justify-content: flex-end;
+    z-index: 2;
+  }
+
+  .menuButton {
+    font-size: calc(3px + 1.2vw);
+    font-weight: 700;
+  }
+
+  .menuButton:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 25%;
+    background: red;
+    visibility: hidden;
+    border-radius: 3px;
+    /* transform-origin: 0 90%; */
+    transform: scaleX(0);
+    transition: 0.25s linear;
+  }
+  .menuButton:hover:before,
+  .menuButton:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  .menuButton:focus {
+    outline: 0;
+  }
+
+  #logo {
+    height: 100vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    animation: 2s forwards ease-in 1s 1 hellob;
+  }
+
+  /* Render the logo smaller at the start */
+  @keyframes hellob {
+    0% {
+      height: 100vh;
+    }
+    50% {
+      height: 15vh;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    100% {
+      height: 15vh;
+      left: 5%;
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%);
+    }
   }
 }
 
@@ -60,6 +173,15 @@ body {
   font-size: calc(12px + 1.5vw);
 }
 
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
 /* ======================================== */
 /* Logo */
 /* ======================================== */
@@ -69,17 +191,14 @@ body {
   background-color: white;
   width: 100vw;
   z-index: 2;
-  animation: 1s forwards ease-out 1s 1 hello3;
+  /* animation: 1s forwards ease-in 1s 1 hello3; */
 }
 
 #logo {
-  align-self: start;
-  /* margin-left: auto;
-  margin-right: auto; */
+  position: relative;
+
   display: block;
-  height: 100vh;
   max-width: 100%;
-  animation: 2s forwards ease-out 1s 1 hello;
 }
 
 .laurier {
@@ -96,7 +215,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
 
-  animation: 2s forwards 0s 1 introFromRight;
+  animation: 2s forwards ease-in 1s 1 introFromRight;
 }
 
 /* ======================================== */
@@ -112,28 +231,14 @@ body {
 /* Menu */
 /* ======================================== */
 
-.menu {
-  /* Avoid the logo */
-  /* padding: 2.5% 6% 2.5% 6%; */
-  padding-top: 15vh;
-  /* display: flex; */
-  align-items: flex-end;
-}
-
 .menuList {
-  top: 3.5vh;
-  right: 3%;
+  height: 15vh;
+  width: 100vw;
   position: fixed;
+
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
-
   align-items: center;
-  justify-content: flex-end;
-
-  opacity: 0;
-  animation: 1s forwards ease-in 1s 1 hello2;
-  z-index: 2;
 }
 
 .menuButton {
@@ -141,12 +246,11 @@ body {
   /* Acts as a flexible column */
   font-family: "Mada", sans-serif;
   /* Give some space in the card */
-  padding: 1em;
   border: none;
-  font-size: calc(5px + 0.5vw);
-  font-weight: 700;
   background: none;
+
   color: black;
+  transition: 2s;
 }
 
 /* ======================================== */
@@ -154,7 +258,6 @@ body {
 /* ======================================== */
 
 #stage1 {
-  /* Avoid the logo */
   display: flex;
 }
 
@@ -167,13 +270,12 @@ body {
   padding: 3%;
 
   flex: 1;
-  animation: 2s forwards 0s 1 introFromLeft;
+  animation: 2s forwards ease-in 1s 1 introFromLeft;
 }
 
 .super {
   font-family: "Playfair Display", serif;
   font-stretch: extra-expanded;
-  /* font-feature-settings: "dlig"; */
   font-weight: 600;
   font-size: calc(8px + 2.7vw);
 }
@@ -267,8 +369,9 @@ body {
 .list {
   display: flex;
   justify-content: space-between;
-  padding: 0% 3% 0% 3%;
-  margin: auto;
+  padding: 0% 5% 0% 3%;
+  /* margin: auto; */
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
@@ -292,17 +395,18 @@ body {
   overflow: visible;
 }
 
-
 .card-columns .card:hover {
   transform: scale(1.03);
 }
 
 .card-columns {
-  background: linear-gradient(356deg, rgb(255, 0, 0) 0%, rgba(255,255,255,1) 68%); 
+  background: linear-gradient(
+    356deg,
+    rgb(255, 0, 0) 0%,
+    rgba(255, 255, 255, 1) 68%
+  );
   overflow: visible;
 }
-
-
 
 /* ======================================== */
 /* Clickable */
@@ -333,20 +437,14 @@ body {
 .button {
   font-family: "Mada", sans-serif;
   /* Acts as a flexible column */
-  display: flex;
-  flex-direction: column;
-  flex: 35% auto;
-  /* Relative position? */
-  position: relative;
+  /* position: relative; */
   /* Give some space in the card */
-  padding: 1.5em;
+  padding: .6em 1.5em .6em 1.5em;
   margin-bottom: 2em;
-  border: none;
-}
 
-/* Text for the buttons */
-.button {
-  font-size: calc(15px + 0.5vw);
+  border: none;
+  font-size: calc(6px + 1.5vw);
+
   font-weight: 700;
   align-self: center;
   justify-self: center;
@@ -373,23 +471,6 @@ body {
   }
 }
 
-/* Render the logo smaller at the start */
-@keyframes hello {
-  0% {
-    height: 100vh;
-  }
-  50% {
-    height: 15vh;
-    /* margin-left: 0%;
-    margin-right: auto; */
-  }
-  100% {
-    height: 15vh;
-
-    margin-left: 6%;
-  }
-}
-
 @keyframes hello2 {
   0% {
     opacity: 0;
@@ -399,14 +480,14 @@ body {
   }
 }
 
-@keyframes hello3 {
+/* @keyframes hello3 {
   0% {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 1);
   }
   100% {
     background-color: rgba(255, 255, 255, 1);
   }
-}
+} */
 
 /* Introduce the elements of the hero and the description */
 @keyframes introFromRight {
