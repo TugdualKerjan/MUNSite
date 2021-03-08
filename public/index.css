@@ -9,40 +9,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Noto+Serif+JP:wght@700&family=Noto+Serif:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
-/* Realign hero cuz ugly */
+/* If on a phone / small screen place menu under logo */
 @media (max-width: 1010px) {
   #stage1 {
-    /* Avoid the logo and menu*/
-    padding-top: 22.5vh;
+    /* Lower stage1 to avoid being under the logo and menu */
+    padding-top: 24.5vh;
     flex-direction: column-reverse;
   }
 
+  /* Place the menu under the logo and resize */
   .menuList {
     transform: translateX(0);
-    padding-top: 16.5vh;
+    padding-top: 17.5vh;
     padding-left: 3%;
     padding-right: 3%;
 
     padding-bottom: 3vh;
-    height: 3vh;
+    /* top: -3vh; */
+    height: 6vh;
     justify-content: space-evenly;
-    background: linear-gradient(
+    flex-wrap: wrap;
+    /* background: linear-gradient(
       356deg,
       rgb(255, 0, 0) 0%,
       rgba(255, 255, 255, 1) 100%
-    );
-    /* background: white; */
+    ); */
+    background: white;
 
     animation: 2s forwards ease-in 1s 1 hello2;
 
     z-index: 1;
-
-   
   }
 
   .menuButton {
-    font-size: calc(15px);
-    font-weight: 500;
+    top: -3vh;
+    /* font-size: calc(3px + 1.2vw);
+    font-weight: 700; */
   }
 
   #logo {
@@ -62,6 +64,25 @@
   }
 }
 
+.menuButton:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 25%;
+  background: red;
+  visibility: hidden;
+  border-radius: 3px;
+  /* transform-origin: 0 90%; */
+  transform: scaleX(0);
+  transition: 0.25s linear;
+}
+.menuButton:hover:before,
+.menuButton:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 @media (min-width: 1011px) {
   #stage1 {
     /* Avoid the logo */
@@ -74,12 +95,6 @@
     padding-right: 3%;
     justify-content: flex-end;
     z-index: 2;
-    /* background: linear-gradient(
-      200deg,
-      rgb(255, 0, 0, 0.2) 0%,
-      rgba(255, 255, 255, 0 ) 40%
-    ); */
-    /* box-shadow: 0px 20px 20px white; */
   }
 
   .menuButton {
@@ -87,27 +102,6 @@
     font-weight: 700;
   }
 
-  .menuButton:before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    bottom: 0;
-    left: 25%;
-    background: red;
-    visibility: hidden;
-    border-radius: 3px;
-    /* transform-origin: 0 90%; */
-    transform: scaleX(0);
-    transition: 0.25s linear;
-  }
-  .menuButton:hover:before,
-  .menuButton:focus:before {
-    visibility: visible;
-    transform: scaleX(1);
-  }
-
-  
   #logo {
     height: 100vh;
     left: 50%;
@@ -116,7 +110,7 @@
     transform: translateX(-50%);
     animation: 2s forwards ease-in 1s 1 hellob;
   }
-  
+
   /* Render the logo smaller at the start */
   @keyframes hellob {
     0% {
@@ -171,11 +165,11 @@
   }
 }
 
-/* var --color: red; */
-
 /* ======================================== */
 /* Body */
 /* ======================================== */
+
+/* Sidebar and font-size to account for windowsize */
 
 body {
   margin: 0;
@@ -183,6 +177,7 @@ body {
   font-size: calc(12px + 1.5vw);
 }
 
+/* Remove the sidebar */
 * {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -201,30 +196,31 @@ body {
   background-color: white;
   width: 100vw;
   z-index: 2;
-  /* animation: 1s forwards ease-in 1s 1 hello3; */
 }
 
 #logo {
   position: relative;
-  
+
   display: block;
   max-width: 100%;
 }
 
+/* Rotating laurier */
 .laurier {
   transform-origin: 37.5%;
   animation: 2s ease-in-out 0s infinite rotateLogo;
 }
 
+/* Big image at the start */
 #hero {
   flex: 1.7;
   object-fit: cover;
   height: calc(300px + 6vh);
   max-width: 90%;
-  
+
   border-radius: 10px;
   overflow: hidden;
-  
+
   animation: 2s forwards ease-in 1s 1 introFromRight;
 }
 
@@ -245,7 +241,7 @@ body {
   height: 15vh;
   width: 100vw;
   position: fixed;
-  
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -258,7 +254,7 @@ body {
   /* Give some space in the card */
   border: none;
   background: none;
-  
+
   color: black;
   transition: 2s;
 }
@@ -385,7 +381,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0% 5% 0% 3%;
-  /* margin: auto; */
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
@@ -453,7 +448,7 @@ body {
   font-family: "Mada", sans-serif;
   /* Acts as a flexible column */
   /* Give some space in the card */
-  padding: .6em 1.5em .6em 1.5em;
+  padding: 0.6em 1.5em 0.6em 1.5em;
   margin-bottom: 2em;
 
   border: none;
@@ -494,15 +489,6 @@ body {
   }
 }
 
-/* @keyframes hello3 {
-  0% {
-    background-color: rgba(255, 255, 255, 1);
-  }
-  100% {
-    background-color: rgba(255, 255, 255, 1);
-  }
-} */
-
 /* Introduce the elements of the hero and the description */
 @keyframes introFromRight {
   0% {
@@ -525,3 +511,46 @@ body {
 /* ======= */
 /* Contact */
 /* ======= */
+
+.profile-list {
+  display: flex;
+  padding: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.profile {
+  /* Acts as a flexible column */
+  display: flex;
+  flex-direction: column;
+  /* Relative position? */
+  position: relative;
+  /* Give some space in the card */
+  border-radius: 30px;
+
+  /* box-shadow: 0 2px 5px red; */
+  box-shadow: 0 3px 0px red;
+
+
+  padding: 25px;
+  margin: 25px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.profile .super {
+  font-size: 40px;
+}
+.profile .desc {
+  font-size: 30px;
+}
+
+.profile img {
+  box-shadow: 0 2px 1px red;
+
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}

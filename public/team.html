@@ -18,9 +18,6 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
 
-
-
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -66,281 +63,75 @@
         </svg>
     </div>
     <div class="menuList">
-        <button class="menuButton " onClick="
-                const yOffset = -10; 
-                const element = document.getElementById('stage2');
-                const yOffset2 = (window.innerWidth < 1011 ? 0.195 : 0.15);
-                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset2 * window.innerHeight;
-                window.scrollTo({ top: y, behavior: 'smooth' });">About</button>
+        <button class="menuButton " onClick="window.location.href='index.html#stage2';">About</button>
         <!-- <div class="divider"></div> -->
-        <button class="menuButton " onClick="window.location.href='team.html'">Team</button>
+        <button class="menuButton " onClick="">Team</button>
         <!-- <div class="divider"></div> -->
-        <button class="menuButton " onClick="
-                const yOffset = -10; 
-                const element = document.getElementById('stage3');
-                const yOffset2 = (window.innerWidth < 1011 ? 0.195 : 0.15);
-                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset2 * window.innerHeight;
-                window.scrollTo({ top: y, behavior: 'smooth' });">Conferences</button>
+        <button class="menuButton " onClick="window.location.href='index.html#stage3';">Conferences</button>
         <!-- <div class="divider"></div> -->
-        <button class="menuButton " onClick="
-                const yOffset = -10; 
-                const element = document.getElementById('stage4');
-                const yOffset2 = (window.innerWidth < 1011 ? 0.195 : 0.15);
-                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset2 * window.innerHeight;
-                window.scrollTo({ top: y, behavior: 'smooth' });">Sessions</button>
+        <button class="menuButton " onClick="window.location.href='index.html#stage4';">Sessions</button>
         <!-- <div class="divider"></div> -->
-        <button class="menuButton" onClick="
-                const yOffset = -10; 
-                const element = document.getElementById('stage5');
-                const yOffset2 = (window.innerWidth < 1011 ? 0.195 : 0.15);
-                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset2 * window.innerHeight;
-                window.scrollTo({ top: y, behavior: 'smooth' });">Documents</button>
+        <button class="menuButton " onClick="window.location.href='index.html#stage5';">Documents</button>
         <!-- <div class="divider"></div> -->
-        <button class="menuButton" onClick="
-                const yOffset = -10; 
-                const element = document.getElementById('stage6');
-                const yOffset2 = (window.innerWidth < 1011 ? 0.195 : 0.15);
-                const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset2 * window.innerHeight;
-                window.scrollTo({ top: y, behavior: 'smooth' });">Contact</button>
+        <button class="menuButton " onClick="window.location.href='index.html#stage6';">Contact</button>
     </div>
     <div id="container">
         <div id="break"></div>
-        <div class="stage" id="stage1">
-            <div id="herotext">
-                <div class="super">
-                    Public Speaking, Geopolitics and Negotiation.
-                </div>
-                <div class="desc">
-                    MUN EPFL is an association dedicated to simulating UN debates for the students of Ecole
-                    Polytechnique
-                    Federale de Lausanne
-                </div>
-            </div>
-            <img id="hero"
-                src="https://res.cloudinary.com/tugdual/image/upload/c_scale,q_auto:best,w_1000/v1607103280/MUN/hero_gcfbpb.jpg">
+        <div class="stage profile-list" id="stage1">
+            <article class="profile">
+                <img src="images/tug.png">
+                <p class="super">President</p>
+                <p class="desc" p>Tugdual Kerjan</p>
+            </article>
+            <article class="profile">
+                <img src="images/imanes.png">
+                <p class="super">Vice President</p>
+                <p class="desc" p>Imane Seghrouchni</p>
+            </article>
+            <article class="profile">
+                <img src="images/pauline.png">
+                <p class="super">Vice President</p>
+                <p class="desc" p>Pauline Konstantiovna</p>
+            </article>
+            <article class="profile">
+                <img src="images/louis.jpg">
+                <p class="super" p>Session Manager</p>
+                <p class="desc">Louis Flahault</p>
+            </article>
+            <article class="profile">
+                <img src="images/aral.jpg">
+                <p class="super">Treasurer</p>
+                <p class="desc" p>Aral Arbatli</p>
+            </article>
+            <article class="profile">
+                <img src="images/mila.jpg">
+                <p class="super">Communication</p>
+                <p class="desc" p>Mila Kjoseva</p>
+            </article>
+            <article class="profile">
+                <img src="images/imaneb.jpg">
+                <p class="super">Event Manager</p>
+                <p class="desc" p>Imane Benkamoun</p>
+            </article>
         </div>
-        <div id="break"></div>
-        <div class="stage" id="stage2">
-            <div id="ministage1">
-                <div id="icon">
-                    <img id="iconimg" src="./path170.png">
-                    <div id="break"></div>
-                </div>
-                <div class="linedesc">
-                    <div class="super">
-                        Public Speaking
-                    </div>
-                    <div class="desc">
-                        At MUN, Delegates (Students) defend the point of view of the country they are representing.
-                        Throughout the sessions students
-                        will learn to convince and entice others with their speeches.
-                    </div>
-                </div>
-            </div>
-            <div id="ministage2">
-                <div id="icon">
-                    <img id="iconimg" src="./path170.png">
-                    <div id="break"></div>
-                </div>
-                <div class="linedesc">
-                    <div class="super">
-                        Geopolitics
-                    </div>
-                    <div class="desc">
-                        The underlying theme of MUN resonates with the UNs, i.e. Geopolitics. this gives a solid
-                        framework
-                        in which Delegates may
-                        work on the arguements to put forward.
-                    </div>
-                </div>
-            </div>
-            <div id="ministage3">
-                <div id="icon">
-                    <img id="iconimg" src="./path170.png">
-                    <div id="break"></div>
-                </div>
-                <div class="linedesc">
-                    <div class="super">
-                        Negotiation
-                    </div>
-                    <div class="desc">
-                        Delegates must ultimately also learn to work on comprimise, with the priority to bring in
-                        resolutions most countries will agree upon.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="break"></div>
-        <div class="stage" id="stage3">
-            <div class="">
-                <div class="super">
-                    Conferences
-                </div>
-                <div class="desc">
-                    MUN EPFL has organized multiple conferences in the last years, here are a few of them highlighted:
-                </div>
-            </div>
-        </div>
-        <div class="stage card-columns">
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://res.cloudinary.com/tugdual/image/upload/c_scale,q_auto:best,w_600/v1607103185/MUN/c3_mrcahm.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">Public Speaking Contest</h5>
-                    <p class="card-text"><small class="text-muted">October 6th 2020</small></p>
-                    <p class="card-text">MUN EPFL Organised its Annual Concours d'Eloquence this year, taking place in
-                        the
-                        STCC with the help
-                        of FORUM EPFL. 6 Finalists debated and fought to gain the prestegious title of Best Public
-                        Speaker
-                        2020</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://res.cloudinary.com/tugdual/image/upload/v1607103944/MUN/c4_rziapq.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">Game of Thrones Crisis</h5>
-                    <p class="card-text"><small class="text-muted">March 11th 2020</small></p>
-                    <p class="card-text">Organized by the board, this Crisis threw the members in the shoes of the
-                        Westeros
-                        characters to try
-                        and change the past,
-                        all in the framework of a Historical Crisis!
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://res.cloudinary.com/tugdual/image/upload/c_scale,q_auto:best,w_600/v1607103078/MUN/c2_fp91sm.jpg">
-                <div class="card-body">
-                    <h5 class="card-title"> Sierra Leone Crisis</h5>
-                    <p class="card-text"><small class="text-muted">March 23th 2019</small></p>
-                    <p class="card-text">Organized by EPFL, this crisis weekend that occurred on the 2nd & 3rd March
-                        2019
-                        reenacted the blood
-                        diamond conflict of Sierra Leone</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://res.cloudinary.com/tugdual/image/upload/c_scale,q_auto:best,w_600/v1607103075/MUN/c1_e2v2g8.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">WorldMUN Madrid</h5>
-                    <p class="card-text"><small class="text-muted">May 25th 2018</small></p>
-                    <p class="card-text">MUN EPFL participates every year in WorldMUN, the most recognized MUN event in
-                        the
-                        world. At
-                        WorldMUN 2019 in Madrid, we formed a joined delegation with ETH Zürich. </p>
-                </div>
-            </div>
-        </div>
-        <div id="break"></div>
-        <div class="stage" id="stage4">
-            <div class="">
-                <div class="super">
-                    Sessions
-                </div>
-                <div class="desc">
-                    We also organize weekly sessions on which we work on a given topic. Here are some of the recent ones
-                    highlighted:
-                </div>
-            </div>
-        </div>
-        <div class="stage card-columns">
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://res.cloudinary.com/tugdual/image/upload/c_scale,q_auto:best,w_600/v1607103148/MUN/s2_oy90pd.png">
-                <div class="card-body">
-                    <h5 class="card-title">Private Military Contractors</h5>
-                    <p class="card-text"><small class="text-muted">4th November 2020 - 25th November 2020</small>
-                    </p>
-                    <p class="card-text">Deep thought was put into the amendment to the Geneva Conventions that
-                        failed
-                        to encapsulate the
-                        possibility that PMCs blur the line between combattant and citizen.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://res.cloudinary.com/tugdual/image/upload/c_scale,q_auto:best,w_1200/v1607103185/MUN/c3_mrcahm.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">Sierra Leone Crisis</h5>
-                    <p class="card-text"><small class="text-muted">March 23th 2019</small></p>
-                    <p class="card-text">Organized by EPFL, this crisis weekend that occurred on the 2nd & 3rd March
-                        2019 reenacted the blood
-                        diamond conflict of Sierra Leone</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://res.cloudinary.com/tugdual/image/upload/c_scale,q_auto:best,w_1200/v1607103084/MUN/s1_zvcsjs.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">The Hong Kong situation in China</h5>
-                    <p class="card-text"><small class="text-muted">September 16th 2020 - October 7th 2020</small>
-                    </p>
-                    <p class="card-text">Intense discussion regarding the current situation in Hong Kong as China
-                        tightens its grip on the
-                        territory.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://res.cloudinary.com/tugdual/image/upload/c_scale,q_auto:best,w_600/v1607103083/MUN/s3_ziakti.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">UNEP Environmental Committee</h5>
-                    <p class="card-text"><small class="text-muted">May 25th 2018</small></p>
-                    <p class="card-text">Different nations came together to debate on the subject of how to tax C02
-                        Emmissions </p>
-                </div>
-            </div>
-        </div>
-        <div id="break"></div>
-        <div class="stage" id="stage5">
-            <div class="linedesc">
-                <div class="super">
-                    Documents
-                </div>
-                <div class="desc">
-                    Statutes, Minutes and other documents are available on our drive through these links:
-                </div>
-            </div>
-        </div>
-        <section class="list">
-            <button class="button clickable"
-                onclick="location.href='https://docs.google.com/document/d/1c_dt2O3AnltpOdkB4UyKkLcJaSBeQlVmKe6TLoHj2W8/edit?usp=sharing'">
-                Association Statutes</button>
-            <div class="divider"></div>
-            <button class="button clickable"
-                onclick="location.href='https://drive.google.com/drive/folders/1qjX17p_3wPTMAtOfKVvp1Fmrk9vyG-RF?usp=sharing'">
-                Minutes</button>
-            <div class="divider"></div>
-            <button class="button clickable"
-                onclick="location.href='https://docs.google.com/document/d/1YCABdzLK_mSUF1OsDC45ver1wE9vNA9ILxbQoZ33WMk/edit?usp=sharing'">
-                Rules of Procedure</button>
-        </section>
-        <div id="break"></div>
-        <div class="stage" id="stage6">
-            <div class="super" style="padding-bottom: 2.5%;">
-                Contact MUN EPFL
-            </div>
-            <div class="desc"></div>
-            <div class="list">
-                <!-- <div class="button clickable"> -->
-                <button class="button clickable" onclick="location.href='mailto: mun@epfl.ch'">mun@epfl.ch</button>
-                <!-- </div> -->
-                <div class="divider"></div>
-
-                <!-- <div class="button clickable"> -->
-                <button class="button clickable" onclick="location.href='https://plan.epfl.ch/?q=CO116'">CO 116, EPFL,
-                    CH-1015 Lausanne</button>
-                <!-- </div> -->
-            </div>
-        </div>
-        <!-- <img id="contact-img"
-                src="https://res.cloudinary.com/tugdual/image/upload/v1607269321/MUN/rolex_zhozse.jpg"></img> -->
     </div>
+    <div id="break"></div>
+    <div class="stage" id="stage6">
+        <div class="super" style="padding-bottom: 2.5%;">
+            Contact MUN EPFL
+        </div>
+        <div class="desc"></div>
+        <div class="list">
+            <!-- <div class="button clickable"> -->
+            <button class="button clickable" onclick="location.href='mailto: mun@epfl.ch'">mun@epfl.ch</button>
+            <!-- </div> -->
+            <div class="divider"></div>
+
+            <!-- <div class="button clickable"> -->
+            <button class="button clickable" onclick="location.href='https://plan.epfl.ch/?q=CO116'">CO 116, EPFL,
+                CH-1015 Lausanne</button>
+            <!-- </div> -->
+        </div>
     </div>
 </body>
 <script src="scroll-out.min.js"></script>

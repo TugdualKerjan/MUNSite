@@ -2,3 +2,13 @@
 .vscode
 node_packages
 public/images
+!public/images/pauline.png
+!public/images/imaneb.jpg
+!public/images/imanes.png
+!public/images/louis.jpg
+!public/images/mila.jpg
+!public/images/tug.png
+!public/images/aral.jpg
+
+
+
