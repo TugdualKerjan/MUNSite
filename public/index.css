@@ -509,14 +509,18 @@ body {
 }
 
 /* ======= */
-/* Contact */
+/* BOARD */
 /* ======= */
 
 .profile-list {
+  width: 100%;
+  margin-top: 2.5vh;
+  justify-content: space-between;
+  /* align-items: space-between; */
   display: flex;
-  padding: 40px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 3rem;
+  /* overflow-x: scroll; */
 }
 
 .profile {
@@ -525,32 +529,53 @@ body {
   flex-direction: column;
   /* Relative position? */
   position: relative;
+  width: 400px;
   /* Give some space in the card */
-  border-radius: 30px;
+  padding: 20px;
+  margin: 10px;
 
-  /* box-shadow: 0 2px 5px red; */
-  box-shadow: 0 3px 0px red;
+  /* Shadows */
+  /* Round the edges */
+  border-radius: 16px;
+  background-color: white;
+  border: 1px solid red;
 
-
-  padding: 25px;
-  margin: 25px;
-
-  align-items: center;
-  justify-content: center;
+  transition: 0.5s;
 }
 
-.profile .super {
-  font-size: 40px;
+.profile-title {
+  padding-top: 0.7vw;
+  font-weight: 700;
+  font-size: calc(28px);
+  font-family: "Playfair Display", sans-serif;
 }
-.profile .desc {
-  font-size: 30px;
+
+.profile-name {
+  padding-top: 0.7vw;
+  font-size: calc(24px);
+  font-family: "Mada", sans-serif;
+}
+
+.profile-desc {
+  padding-top: 0.7vw;
+  font-size: calc(16px);
+  font-family: "Mada", sans-serif;
 }
 
 .profile img {
-  box-shadow: 0 2px 1px red;
-
-  margin: 25px;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
+  max-height: 300px;
+  object-fit: cover;
 }
+
+.profile:hover {
+  transform: translateY(-0.5rem);
+}
+
+.profile:hover ~ .profile {
+  transform: translateX(30px);
+}
+
+/* Not is negation pseudo class
+.profile:not(:first-child) {
+  margin-left: -30px;
+} */
