@@ -515,7 +515,7 @@ body {
 .profile-list {
   width: 100%;
   margin-top: 2.5vh;
-  justify-content: space-between;
+  justify-content: space-around;
   /* align-items: space-between; */
   display: flex;
   flex-wrap: wrap;
