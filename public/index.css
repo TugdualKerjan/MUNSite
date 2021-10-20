@@ -224,6 +224,19 @@ body {
   animation: 2s forwards ease-in 1s 1 introFromRight;
 }
 
+/* image alongside conf name*/
+#smallhero {
+  flex: 1;
+  object-fit: cover;
+  height: calc(300px + 6vh);
+  max-width: 90%;
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  animation: 2s forwards ease-in 1s 1 introFromRight;
+}
+
 /* ======================================== */
 /* Block has padding */
 /* ======================================== */
@@ -293,6 +306,12 @@ body {
   font-family: "Mada", sans-serif;
   padding-top: 1vw;
   font-size: calc(6px + 1.3vw);
+}
+
+.subsuper {
+  font-family: "Mada", sans-serif;
+  padding-top: 1vw;
+  font-size: calc(9px + 1.7vw);
 }
 
 /* ======================================== */
