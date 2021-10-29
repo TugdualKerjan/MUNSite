@@ -65,9 +65,9 @@
     <div class="menuList">
         <button class="menuButton " onClick="window.location.href='index.html#stage2';">About</button>
         <!-- <div class="divider"></div> -->
-        <button class="menuButton " onClick="window.location.href='epflmun2022.html'">EPFLMUN 2022</button>
+        <button class="menuButton " onClick="">EPFLMUN 2022</button>
         <!-- <div class="divider"></div> -->
-        <button class="menuButton " onClick="">Board</button>
+        <button class="menuButton " onClick="window.location.href='board.html'">Board</button>
         <!-- <div class="divider"></div> -->
         <button class="menuButton " onClick="window.location.href='index.html#stage3';">Conferences</button>
         <!-- <div class="divider"></div> -->
@@ -79,169 +79,162 @@
     </div>
     <div id="container">
         <div id="break"></div>
-        <section class="profile-list" id="stage1">
-            <article class="profile">
-                <img class="profile-avatar" src="images/P1090335.JPG">
-                <div class="profile-title">
-                    President
+        <div class="stage" id="stage1">
+            <div id="herotext">
+                <div class="super">
+                    <img id="logo"
+                    src="./favicon/epflmun555x450.png">
+                    EPFLMUN 2022
                 </div>
-                <div class="profile-name">
-                    Imane Seghrouchni
+                <div class="subsuper">
+                    "Space Exploration: A great challenge of the 21st century"
                 </div>
-                <div class="profile-desc">
-                    My goal is to motivate the rest of the board, organize the weekly meetings and help transmit
-                    experience
-                    to the other board members so that MUN EPFL can grow steadily. I also need to give a global vision
-                    to
-                    the association as a ship without a destination is inefficient.
+            </div>
+            <img id="smallhero"
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e2/EPFL_campus_2017.jpg">
+        </div>
+        <div id="break"></div>
+        <div class="stage" id="stage2">
+            <div id="ministage1">
+                <div id="icon">
+                    <img id="iconimg" src="./path170.png">
+                    <div id="break"></div>
                 </div>
-            </article>
+                <div class="linedesc">
+                    <div class="super">
+                        Dates
+                    </div>
+                    <div class="desc">
+                        This very first edition of EPFLMUN will be held from 25 March to 27 March 2022.
+                    </div>
+                </div>
+            </div>
+            <div id="ministage2">
+                <div id="icon">
+                    <img id="iconimg" src="./path170.png">
+                    <div id="break"></div>
+                </div>
+                <div class="linedesc">
+                    <div class="super">
+                        Venue
+                    </div>
+                    <div class="desc">
+                        EPFLMUN 2022 will take place on the EPFL campus in Ecublens.
+                    </div>
+                </div>
+            </div>
+            <div id="ministage3">
+                <div id="icon">
+                    <img id="iconimg" src="./path170.png">
+                    <div id="break"></div>
+                </div>
+                <div class="linedesc">
+                    <div class="super">
+                        Our Team
+                    </div>
+                    <div class="desc">
+                        EPFLMUN is organised by the association MUN EPFL,
+                        which has a long tradition of participating in conferences all around the world.
+                        We annually take part in the Harvard WorldMUN conference,
+                        which we have had the honour to host in the past.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="break"></div>
+        <div class="stage" id="stage3">
+            <div class="">
+                <div class="super">
+                    Committees
+                </div>
+                <div class="desc">
+                    As EPFL is a multilingual institution, we shall have debates both in English and French
+                    and we will have the following 6 committees:
+                </div>
+            </div>
+        </div>
+        <div class="stage card-columns">
+            <div class="card">
+                <img class="card-img-top"
+                    src="./committee-logos/Emblem_of_the_United_Nations.svg">
+                <div class="card-body">
+                    <h5 class="card-title">Disarmament and International Security Committee (DISEC)</h5>
+                    <p class="card-text"><small class="text-muted">English</small></p>
+                    <p class="card-text">Topic : Militarisation and exploitation of outer space ressources:
+                        How to prevent future conflicts ?</p>
+                </div>
+            </div>
 
-            <!-- <article class="profile">
-                <img class="profile-avatar" src="images/P1180057.JPG">
-                <div class="profile-title">
-                    VP of External Affairs
+            <div class="card">
+                <img class="card-img-top"
+                    src="./committee-logos/Emblem_of_the_United_Nations.svg">
+                <div class="card-body">
+                    <h5 class="card-title">UNGA: Economic and Financial Committee (ECOFIN)</h5>
+                    <p class="card-text"><small class="text-muted">English</small></p>
+                    <p class="card-text">Topic : Bringing private and governmental actors together to secure
+                        a better future for the Space Exploration field.</p>
                 </div>
-                <div class="profile-name">
-                    Imane Seghrouchni
+            </div>
+
+            <div class="card">
+                <img class="card-img-top"
+                    src="./committee-logos/Emblem_of_the_United_Nations.svg">
+                <div class="card-body">
+                    <h5 class="card-title">Crisis committee: Security Council (UNSC)</h5>
+                    <p class="card-text"><small class="text-muted">English</small></p>
+                    <p class="card-text">Topic : International Crisis Situation</p>
                 </div>
-                <div class="profile-desc">
-                    As the Vice President of External Relations my role is to appoint and supervise any kind of affairs
-                    related to the external image of the association. This includes dealing with sponsors, polyMUN,
-                    JUNES,
-                    and other MUN associations.
+            </div>
+
+            <div class="card">
+                <img class="card-img-top"
+                    src="./committee-logos/World_Tourism_Organization_Logo.svg">
+                <div class="card-body">
+                    <h5 class="card-title">Crisis committee: Security Council (UNSC)</h5>
+                    <p class="card-text"><small class="text-muted">English</small></p>
+                    <p class="card-text">Topic : Building a sustainable and universally affordable
+                        plan for space tourism</p>
                 </div>
-            </article> -->
-            <article class="profile">
-                <img class="profile-avatar" src="images/P1180040.JPG">
-                <div class="profile-title">
-                    Vice President
+            </div>
+
+            <div class="card">
+                <img class="card-img-top"
+                    src="./committee-logos/UNEP_logo.svg">
+                <div class="card-body">
+                    <h5 class="card-title">Programme des Nations unies pour l'environnement (PNUE)</h5>
+                    <p class="card-text"><small class="text-muted">Francais</small></p>
+                    <p class="card-text">Sujet : Comment assurer la propreté et la durabilité écologique
+                        de l’exploration spatiale?</p>
                 </div>
-                <div class="profile-name">
-                    Pauline Verchinine
+            </div>
+
+            <div class="card">
+                <img class="card-img-top"
+                    src="./committee-logos/Flag_of_the_African_Union.svg">
+                <div class="card-body">
+                    <h5 class="card-title">Union Africaine</h5>
+                    <p class="card-text"><small class="text-muted">Francais</small></p>
+                    <p class="card-text">Sujet : Comment développer efficacement l’exploration spatiale africaine?</p>
                 </div>
-                <div class="profile-desc">
-                    As the Vice President, I work in the president, and behind the scenes. I take
-                    care of our relationship with EPFL and I’m mostly in charge of supervision, helping out with the
-                    events or the sessions.
+            </div>
+        </div>
+        <div id="break"></div>
+        <div class="stage" id="stage5">
+            <div class="linedesc">
+                <div class="super">
+                    Chair Application
                 </div>
-            </article>
-            <article class="profile">
-                <img class="profile-avatar" src="images/P1090369.JPG">
-                <div class="profile-title">
-                    Tresurer
+                <div class="desc">
+                    Chair applications are open and we would be delighted to have you as part of our team! <br>
+                    The deadline for applying is <b>26th December</b>. We will be accepting applications as they come in,
+                    so we would advise you to apply as soon as possible.
                 </div>
-                <div class="profile-name">
-                    Aral Arbatli
-                </div>
-                <div class="profile-desc">
-                    As the Treasurer, I keep the financial records of the association and advise the president on how to
-                    make our policies more economical. As (one of the) Conference Managers, I search for MUN conferences
-                    we can partake in, and sometimes help other board members in related events and negotiations.
-                </div>
-            </article>
-            <article class="profile">
-                <img class="profile-avatar" src="images/P1180039.JPG">
-                <div class="profile-title">
-                    Communication Manager
-                </div>
-                <div class="profile-name">
-                    Mila Kjoseva
-                </div>
-                <div class="profile-desc">
-                    My role as Head of Communication consists of dealing with anything that is communication related.
-                    I’m
-                    responsible for sending the weekly newsletters, managing the Telegram and social medias. I also keep
-                    account and supervise all the emails that the board receives and sends.
-                </div>
-            </article>
-            
-            <article class="profile">
-                <img class="profile-avatar" src="images/P1090385.JPG">
-                <div class="profile-title">
-                    Event Manager
-                </div>
-                <div class="profile-name">
-                    Imane Benkamoun
-                </div>
-                <div class="profile-desc">
-                    My role as the Event Manager consists of organizing all the events. It can be small gatherings,
-                    aperos with the delegates, or bigger events such as public speaking contests and conferences. My job
-                    is mostly dealing with the logistics, but also making sure everyone has a good time and makes the
-                    most out of every moment.
-                </div>
-            </article>
-            <article class="profile">
-                <img class="profile-avatar" src="images/P1180066.JPG">
-                <div class="profile-title">
-                    Conference Manager
-                </div>
-                <div class="profile-name">
-                    Marine Bossanne
-                </div>
-                <div class="profile-desc">
-                    My role as the Conference Manager is being in charge of creating and organising a Model United
-                    Nations conference on campus. This means that I’m responsible of managing the team working on this
-                    project and anything else related to it.
-                </div>
-            </article>
-            <article class="profile">
-                <!-- <img class="profile-avatar" src="images/P1180023.JPG"> -->
-                <div class="profile-title">
-                    Session Manager
-                </div>
-                <div class="profile-name">
-                    Mariem Baccari
-                </div>
-                <div class="profile-desc">
-                    The role of the Sessions Manager is to organize and make sure the weekly sessions go well. You’re
-                    supposed to think of interesting topics, jot up the study guides and be in charge of the chairing
-                    during the sessions.
-                </div>
-            </article>
-            <article class="profile">
-                <!-- <img class="profile-avatar" src="images/P1180023.JPG"> -->
-                <div class="profile-title">
-                    Session Manager
-                </div>
-                <div class="profile-name">
-                    Ahmed Kamal Elalamy
-                </div>
-                <div class="profile-desc">
-                    The role of the Sessions Manager is to organize and make sure the weekly sessions go well. You’re
-                    supposed to think of interesting topics, jot up the study guides and be in charge of the chairing
-                    during the sessions.
-                </div>
-            </article>
-            <article class="profile">
-                <!-- <img class="profile-avatar" src="images/open.jpg"> -->
-                <div class="profile-title">
-                    Sponsoring Manager
-                </div>
-                <div class="profile-name">
-                    Open position
-                </div>
-                <div class="profile-desc">
-                    The role of the sponsoring manager is to be able to bring money and resources into the association
-                    so that members and the comite may go to more conferences and invest into events that otherwise
-                    would not have been possible. It is also their role to solidify the public image of the association
-                    so as to be appealing.
-                </div>
-            </article>
-            <article class="profile">
-                <!-- <img class="profile-avatar" src="images/open.jpg"> -->
-                <div class="profile-title">
-                    Graphic designer
-                </div>
-                <div class="profile-name">
-                    Open position
-                </div>
-                <div class="profile-desc">
-                    Maintaining the image of the association is the main role of graphic designer. Especially in MUN,
-                    appearances are everything. Inspiring the members with a solid and coherent public image is the most
-                    important.
-                </div>
-            </article>
+            </div>
+        </div>
+        <section class="list">
+            <button class="button clickable"
+                onclick="location.href='https://mymun.com/muns/epflmun-2022'">
+                MyMUN Chair Application</button>
         </section>
     </div>
     <div id="break"></div>
